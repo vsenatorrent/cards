@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.team {
+  width: 100%;
+  padding: 100px;
+  background-color: #8ABEB2;
+  transition: transform 1s ease-in-out;
+  h3 {
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  .cardWrap {
+    z-index: 1111;
+    width: 33%;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    .bg {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .overlay {
+        background-color: darkslategrey;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        span {
+          color: white;
+          text-transform: capitalize;
+          top: 50%;
+          position: relative;
+        }
+      }
+    }
+    .name {
+      margin-top: 10px;
+      color: red;
+    }
+    .skill {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.modal {
+  width: 400px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  transition: opacity 1s ease-in-out;
+  background-color: #ddd;
+  z-index: -1;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 30px;
+  width: 30px;
+  background: url(../img/close.svg) center center no-repeat;
+  transform: opacity 2s ease-in-out;
+  cursor: pointer;
+}
